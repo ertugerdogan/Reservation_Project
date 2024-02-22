@@ -1,0 +1,115 @@
+.facility-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.facility-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.facility-card strong {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.facility-card .title {
+  background-color: #f1c40f;
+  color: #fff;
+  padding: 8px;
+  border-radius: 8px 8px 0 0;
+}
+
+.facility-card .details {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 8px;
+  border-radius: 0 0 8px 8px;
+}
+
+.facility-card .fill-bar-container {
+  position: relative;
+  height: 10px;
+  overflow: hidden;
+}
+
+.facility-card .fill-bar {
+  position: relative;
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.facility-card .bar-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #000;
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+.search-result {
+  margin-top: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  background-color: #333;
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  height: 60px;
+}
+
+.navbar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar-item {
+  margin: 0;
+  padding: 0 10px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-link:hover {
+  color: #ffd700;
+}
+
+main {
+  margin-top: 60px;
+  padding: 20px;
+}

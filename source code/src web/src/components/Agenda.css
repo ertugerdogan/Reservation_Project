@@ -1,0 +1,27 @@
+.time-slots-card {
+  background-color: #ffd700;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 16px;
+}
+
+.time-slot-card {
+  background-color: #add8e6;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  color: #fff;
+  margin-bottom: 8px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #87ceeb;
+  }
+
+  &.reserved {
+    background-color: #ff6961;
+    color: #fff;
+    cursor: not-allowed;
+  }
+}
